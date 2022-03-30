@@ -8,4 +8,4 @@ type MyParameters<T extends (...args: any) => any> = T extends (
 
 declare function f1(arg: { a: number; b: string }): void;
 
-type ResultParameter = MyParameters<typeof f1>;
+type ParameterResult = MyParameters<typeof f1>;

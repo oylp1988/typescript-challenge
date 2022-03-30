@@ -1,5 +1,7 @@
 type isEqual<M, N> = M extends N ? (N extends M ? true : false) : false;
 
+// 要点
+// infer的使用
 type MyIncludes<M extends any[], N> = M extends [infer First, ...infer Rest]
   ? isEqual<First, N> extends true
     ? true

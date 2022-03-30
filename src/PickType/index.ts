@@ -8,9 +8,9 @@ type MyPick<T, V extends keyof T> = {
   [v in V]: T[v];
 };
 
-type TodoPreview = MyPick<TodoPickType, "title" | "completed">;
+type TodoPick = MyPick<TodoPickType, "title" | "completed">;
 
-const todoPickType: TodoPreview = {
+const todoPick: TodoPick = {
   title: "Clean room",
   completed: false,
 };
