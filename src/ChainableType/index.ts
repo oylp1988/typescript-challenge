@@ -24,3 +24,5 @@ interface ChainableResult {
     value: string;
   };
 }
+
+type isChainableResultEqual = isEqual<typeof result, ChainableResult>;
