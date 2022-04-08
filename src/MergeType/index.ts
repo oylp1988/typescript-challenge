@@ -8,6 +8,9 @@ type MergeObjectB = {
   a: 2;
   b: 3;
 };
+
+// 要点
+// 这个方法需要熟悉
 type MyMerge<
   T extends Record<string, unknown>,
   P extends Record<string, unknown>
